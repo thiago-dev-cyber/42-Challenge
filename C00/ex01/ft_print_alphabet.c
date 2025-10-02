@@ -9,17 +9,15 @@
 
 #include <unistd.h>
 
-
 /*Display the alphabet on the screen*/
-void ft_print_alphabet(void) {
-    
-    char letter;
-    letter = 'a';
+void	ft_print_alphabet(void)
+{
+	char	letter;
 
-    for (int i = 0; i < 26; i++) {
-        
-        write(1, &letter, 1);
-        letter++;
-    }
+	letter = 0x61;
+	while (letter <= 0x7A)
+	{
+		write(1, &letter, 1);
+		letter++;
+	}
 }
-

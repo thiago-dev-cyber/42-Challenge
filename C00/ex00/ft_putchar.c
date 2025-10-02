@@ -6,14 +6,10 @@
  * Description: This function write in display a character.
  **********************************************************
 */
-
-
 #include <unistd.h>
 
 /* Display character 'c' on the screen*/
-void ft_putchar(char c) {
-
-    write(1, &c, 1);
-
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
 }
-
